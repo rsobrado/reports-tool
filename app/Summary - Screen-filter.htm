@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>LoadTickets </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />    
+
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+    <script src="http://use.typekit.net/ydd0ten.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header >
+            <div class="content">
+                <a href="/Home/Index" class="logo"><img src="http://placehold.it/200x80" alt=""></a>
+                <nav>
+                    <ul class="top-menu pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="content">
+            <div id="SearchPartialView">
+                <div id="container">
+                    <h2>Result in the Project with Milestone</h2>
+                    <div class="dataTables_filter" id="example_filter">
+                        <label>Search: <input type="text" aria-controls="example"></label>
+                    </div>
+                    <div role="grid" class="dataTables_wrapper" id="example_wrapper">
+                        
+
+                        <table cellspacing="0" cellpadding="0" border="0" id="example" class="display dataTable ticketsResultTable" aria-describedby="example_info">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 35px;" aria-sort="ascending" aria-label="Case #: activate to sort column descending">
+                                        Case #
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-0">
+                                            <input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter ui-autocomplete-input" id="yadcf-filter--example-0" autocomplete="off">
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 0); return false;" value="x">
+                                        </div>
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 74px;" aria-label="Developer: activate to sort column ascending">
+                                        Developer
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-1">
+                                            <input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter ui-autocomplete-input" id="yadcf-filter--example-1" autocomplete="off">
+                                            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 1); return false;" value="x">
+                                        </div>
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 60px;" aria-label="Status: activate to sort column ascending">
+                                        Status
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-2">
+                                            <input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter ui-autocomplete-input" id="yadcf-filter--example-2" autocomplete="off">
+                                            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 2); return false;" value="x">
+                                        </div>
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 32px;" aria-label="Tags: activate to sort column ascending">Tags
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-3">
+                                            <input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter ui-autocomplete-input" id="yadcf-filter--example-3" autocomplete="off">
+                                            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 3); return false;" value="x">
+                                        </div>
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 63px;" aria-label="Category: activate to sort column ascending">Category
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-4">
+                                            <input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter ui-autocomplete-input" id="yadcf-filter--example-4" autocomplete="off">
+                                            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 4); return false;" value="x">
+                                        </div>
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 88px;" aria-label="QA Responsible: activate to sort column ascending">QA Responsible
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-5">
+                                            <input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter " id="yadcf-filter--example-5" autocomplete="off">
+                                            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 5); return false;" value="x">
+                                        </div>
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 60px;" aria-label="QA Estimate: activate to sort column ascending">QA Estimate
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-6"><input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter ui-autocomplete-input" id="yadcf-filter--example-6" autocomplete="off">
+                                            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 6); return false;" value="x">
+                                        </div>
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 60px;" aria-label="Dev Estimate: activate to sort column ascending">Dev Estimate
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-7">
+                                            <input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter ui-autocomplete-input" id="yadcf-filter--example-7" autocomplete="off">
+                                            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 7); return false;" value="x">
+                                        </div>
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 60px;" aria-label="UI Estimate: activate to sort column ascending">UI Estimate
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-8">
+                                            <input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter ui-autocomplete-input" id="yadcf-filter--example-8" autocomplete="off">
+                                            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 8); return false;" value="x">
+                                        </div>
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 69px;" aria-label="Estimated: activate to sort column ascending">Estimated
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-9">
+                                            <input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter ui-autocomplete-input" id="yadcf-filter--example-9" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 9); return false;" value="x">
+                                        </div>
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 25px;" aria-label="QA Fail: activate to sort column ascending">QA Fail
+                                        <div class="yadcf-filter-wrapper" id="yadcf-filter-wrapper--example-10">
+                                            <input onkeyup="yadcf.autocompleteKeyUP('-example',event);" filter_match_mode="contains" placeholder="Type to filter" onclick="yadcf.stopPropagation(event);" class="yadcf-filter ui-autocomplete-input" id="yadcf-filter--example-10" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                            <input type="button" class="yadcf-filter-reset-button" onclick="yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '-example', 10); return false;" value="x">
+                                        </div>
+                                    </th>
+                                </tr> 
+                            </thead>
+                            <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                <tr class="gradeA odd">
+                                    <td class="  sorting_1"> 52280   </td> 
+                                    <td class=" ">  </td>       
+                                    <td class=" "> Actionable </td>
+                                    <td class=" ">
+                                        <span class="my-tag">camiones</span>
+                                        <span class="my-tag">tag</span>
+                                        <span class="my-tag">tag</span>
+                                    </td>
+                                    <td class=" ">Bug</td>
+                                    <td class=" "></td>
+                                    <td class=" ">12</td>
+                                    <td class=" ">4</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">16</td>
+                                    <td class=" ">0</td>
+                                </tr>
+                                <tr class="gradeA even">
+                                    <td class="  sorting_1"> 65894   </td> 
+                                    <td class=" ">  </td>       
+                                    <td class=" "> Actionable </td>
+                                    <td class=" ">
+                                        <span class="my-tag">camiones</span>
+                                    </td>
+                                    <td class=" ">Feature</td>
+                                    <td class=" "></td>
+                                    <td class=" ">40</td>
+                                    <td class=" ">24</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">64</td>
+                                    <td class=" ">0</td>
+                                </tr>
+                                <tr class="gradeA odd">
+                                    <td class="  sorting_1"> 67910   </td> 
+                                    <td class=" ">  </td>       
+                                    <td class=" "> Actionable </td>
+                                    <td class=" ">
+                                        <span class="my-tag">camiones</span>
+                                        <span class="my-tag">tag</span> 
+                                    </td>
+                                    <td class=" ">Bug</td>
+                                    <td class=" "></td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                </tr>
+                                <tr class="gradeA even">
+                                    <td class="  sorting_1"> 69507   </td> 
+                                    <td class=" ">  </td>       
+                                    <td class=" "> Actionable </td>
+                                    <td class=" ">
+                                        <span class="my-tag">camiones</span>
+                                        <span class="my-tag">tag</span>
+                                        <span class="my-tag">tag</span>
+                                    </td>
+                                    <td class=" ">Bug</td>
+                                    <td class=" "></td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                </tr>
+                                <tr class="gradeX odd">
+                                    <td class="  sorting_1"> 71813   </td> 
+                                    <td class=" ">  </td>       
+                                    <td class=" "> Actionable </td>
+                                    <td class=" ">
+                                        <span class="my-tag">camiones</span>
+                                        <span class="my-tag">tag</span>
+                                    </td>
+                                    <td class=" ">Feature</td>
+                                    <td class=" "></td>
+                                    <td class=" ">24</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">24</td>
+                                    <td class=" ">0</td>
+                                </tr>
+                                <tr class="gradeA even">
+                                    <td class="  sorting_1"> 72032   </td> 
+                                    <td class=" ">  </td>       
+                                    <td class=" "> Actionable </td>
+                                    <td class=" ">
+                                        <span class="my-tag">camiones</span>
+                                        <span class="my-tag">tag</span>
+                                    </td>
+                                    <td class=" ">Feature</td>
+                                    <td class=" "></td>
+                                    <td class=" ">48</td>
+                                    <td class=" ">20</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">68</td>
+                                    <td class=" ">0</td>
+                                </tr>
+                                <tr class="gradeA odd">
+                                    <td class="  sorting_1"> 72155   </td> 
+                                    <td class=" ">  </td>       
+                                    <td class=" "> Actionable </td>
+                                    <td class=" ">
+                                        <span class="my-tag">camiones</span>
+                                        <span class="my-tag">tag</span>
+                                        <span class="my-tag">tag</span>
+                                        <span class="my-tag">camiones</span>
+                                        <span class="my-tag">tag</span>
+                                    </td>
+                                    <td class=" ">Bug</td>
+                                    <td class=" "></td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                </tr>
+                                <tr class="even gradeA">
+                                    <td class="  sorting_1"> 72301   </td> 
+                                    <td class=" "> Alex Solis </td>       
+                                    <td class=" "> Development </td>
+                                    <td class=" ">
+                                        <span class="my-tag">camiones</span>
+                                    </td>
+                                    <td class=" ">Bug</td>
+                                    <td class=" "></td>
+                                    <td class=" ">4</td>
+                                    <td class=" ">1</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">5</td>
+                                    <td class=" ">0</td>
+                                </tr>
+                                <tr class="gradeA odd">
+                                    <td class="  sorting_1"> 73021   </td> 
+                                    <td class=" ">  </td>       
+                                    <td class=" "> Actionable </td>
+                                    <td class=" ">
+                                        <span class="my-tag">camiones</span>
+                                        <span class="my-tag">tag</span>
+                                        <span class="my-tag">camiones</span>
+                                        <span class="my-tag">tag</span>
+                                    </td>
+                                    <td class=" ">Bug</td>
+                                    <td class=" "></td>
+                                    <td class=" ">3</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">0</td>
+                                </tr>
+                                <tr class="gradeA even">
+                                    <td class="  sorting_1"> 73653   </td> 
+                                    <td class=" ">  </td>       
+                                    <td class=" "> Actionable </td>
+                                    <td class=" ">
+                                        <span class="my-tag">camiones</span>
+                                    </td>
+                                    <td class=" ">Feature</td>
+                                    <td class=" "></td>
+                                    <td class=" ">22</td>
+                                    <td class=" ">2</td>
+                                    <td class=" ">0</td>
+                                    <td class=" ">24</td>
+                                    <td class=" ">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer >
+        <div class="content">
+            <div >
+                <p>&copy; 2014 - My ASP.NET MVC Application</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>   
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/Scripts/jquery.dataTables.yadcf.js"></script>
+-->
+
+</body>
+</html>

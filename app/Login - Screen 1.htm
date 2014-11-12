@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Logon - My ASP.NET MVC Application</title>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        
+        
+        
+        <link href="../Content/site.css" rel="stylesheet"/>
+
+        
+        
+
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title"><a href="/Home/Index">your logo here</a></p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                            <ul>
+        <li><a href="/Account/Register" id="registerLink">Register</a></li>
+        <li><a href="/Account/Login" id="loginLink">Log in</a></li>
+    </ul>
+
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="/Home/Index">Home</a></li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/Home/Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            
+            <section class="content-wrapper main-content clear-fix">
+                
+
+<h2>Logon</h2>
+
+<form action="/fogbugzapi/logon" method="post">    <fieldset>
+        <legend>Log in</legend>
+
+        <div class="editor-label">
+            
+            <label for="Username">Username</label>
+        </div>
+        <div class="editor-field">
+            
+            <input class="text-box single-line" id="Username" name="Username" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true"></span>
+        </div>
+
+        <div class="editor-label">
+            
+            <label for="Password">Password</label>
+        </div>
+        <div class="editor-field">
+            
+            <input id="Password" name="Password" type="password" />
+            <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+        </div>
+
+        <p>
+            <input type="submit" value="Log In"/>
+        </p>
+    </fieldset>
+</form>
+<div>
+    <a href="/fogbugzapi/Index">Back to List</a>
+</div>
+
+
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; 2014 - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>
+
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+        
+    <script src="/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="/Scripts/jquery.validate.js"></script>
+<script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+
+
+    </body>
+</html>

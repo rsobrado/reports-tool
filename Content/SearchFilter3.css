@@ -1,0 +1,26 @@
+﻿#filterDiv
+{
+    display: none;
+}
+
+
+.loader
+{
+    
+    display:none;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 150px;
+    
+   
+}
+
+.loadingDiv
+{
+    display:none;
+    height: 200px;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 300px;
+}

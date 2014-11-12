@@ -1,0 +1,247 @@
+/* 
+________________________ CSS Scaffolding ________________________
+
+- vendor:     is for CSS related to some JavaScript libraries
+- modules:    is for mixins, variables and utilities (such as icons)
+- patterns:   is for global styles, buttons, and forms
+- components: is for groups of patterns with small bits of layout
+- layouts:    is where page layouts go and any page-specific changes to patterns and components
+*/
+/*_______________________________
+  ****** base color scheme ****** 
+  -------------------------------*/
+/* line 1, ../Sass/modules/_menu.scss */
+.top-menu {
+  padding: 0;
+  margin: 20px  0 0;
+  list-style-type: none;
+}
+/* line 5, ../Sass/modules/_menu.scss */
+.top-menu a {
+  color: #f2ffe3;
+  text-decoration: none;
+}
+/* line 9, ../Sass/modules/_menu.scss */
+.top-menu li {
+  float: left;
+  margin-right: 30px;
+  text-align: right;
+  border-bottom: 2px solid;
+  line-height: 2.5;
+  padding: 0 5px 0 20px;
+  cursor: pointer;
+}
+/* line 19, ../Sass/modules/_menu.scss */
+.top-menu li:last-child {
+  margin-right: 0;
+}
+/* line 23, ../Sass/modules/_menu.scss */
+.top-menu li:hover, .top-menu li:focus {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+/* line 27, ../Sass/modules/_menu.scss */
+.top-menu li:hover a, .top-menu li:focus a {
+  color: #acf0f2;
+  text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* line 2, ../Sass/patterns/_base.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 3, ../Sass/patterns/_base.scss */
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+
+/* line 4, ../Sass/patterns/_base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 6, ../Sass/patterns/_base.scss */
+body {
+  background: #f2ffe3;
+  font-size: 62.5%;
+}
+
+/* line 12, ../Sass/patterns/_base.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 16, ../Sass/patterns/_base.scss */
+.content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 21, ../Sass/patterns/_base.scss */
+footer,
+header {
+  background: #225378;
+  overflow: hidden;
+  font-size: 1.2em;
+  color: #acf0f2;
+}
+
+/* line 28, ../Sass/patterns/_base.scss */
+header {
+  height: 80px;
+}
+
+/* line 32, ../Sass/patterns/_base.scss */
+footer {
+  height: 142px;
+}
+
+/* line 38, ../Sass/patterns/_base.scss */
+input {
+  line-height: normal;
+  border: 0;
+  border: none;
+  border-bottom: 1px solid #e12d46;
+  background: rgba(0, 0, 0, 0.2) !important;
+  text-overflow: ellipsis;
+  padding: 2px 5px;
+  font-size: 11px;
+}
+
+/* line 49, ../Sass/patterns/_base.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #e12d46;
+  width: 15px;
+  padding: 2px 5px;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: black;
+  font-size: 11px;
+  box-shadow: none;
+  float: left;
+  box-sizing: border-box;
+}
+
+/* line 67, ../Sass/patterns/_base.scss */
+.container {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+/* line 71, ../Sass/patterns/_base.scss */
+.container:after {
+  content: "";
+  display: block;
+  height: 142px;
+}
+
+/* line 78, ../Sass/patterns/_base.scss */
+.logo {
+  float: left;
+}
+
+/* line 86, ../Sass/patterns/_base.scss */
+.pull-right {
+  float: right;
+}
+
+/******* summary table ****** */
+/* line 91, ../Sass/patterns/_base.scss */
+.ticketsResultTable {
+  background: #acf0f2;
+  color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.2em;
+  width: 95%;
+}
+/* line 99, ../Sass/patterns/_base.scss */
+.ticketsResultTable tr {
+  cursor: pointer;
+}
+/* line 101, ../Sass/patterns/_base.scss */
+.ticketsResultTable tr:nth-child(odd) {
+  background: rgba(34, 83, 120, 0.2);
+  border-top: 1px solid rgba(242, 255, 227, 0.4);
+  border-bottom: 1px solid rgba(34, 83, 120, 0.35);
+  color: rgba(0, 0, 0, 0.6);
+}
+/* line 107, ../Sass/patterns/_base.scss */
+.ticketsResultTable tr:hover {
+  background: #e12d46;
+  color: white;
+}
+/* line 111, ../Sass/patterns/_base.scss */
+.ticketsResultTable tr:first-child th {
+  display: table-cell;
+  text-align: center;
+  background: #1595a3;
+  color: white;
+  max-width: 125px;
+}
+/* line 118, ../Sass/patterns/_base.scss */
+.ticketsResultTable tr td,
+.ticketsResultTable tr th {
+  padding: 7px 15px;
+  line-height: 1;
+  font-size: 12px;
+}
+/* line 124, ../Sass/patterns/_base.scss */
+.ticketsResultTable tr th {
+  cursor: default;
+  font-weight: normal;
+}
+
+/* line 132, ../Sass/patterns/_base.scss */
+.dataTables_filter {
+  margin: 10px 0;
+  float: right;
+  font-size: 11px;
+}
+
+/* line 138, ../Sass/patterns/_base.scss */
+.dataTables_wrapper {
+  width: 100%;
+  max-width: 1000px;
+  overflow-x: auto;
+}
+/* line 142, ../Sass/patterns/_base.scss */
+.dataTables_wrapper .my-tag {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 2px 5px;
+  border-radius: 4px;
+  float: left;
+  margin-top: 3px;
+  position: relative;
+}
+/* line 150, ../Sass/patterns/_base.scss */
+.dataTables_wrapper .my-tag:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+}
+/* line 154, ../Sass/patterns/_base.scss */
+.dataTables_wrapper .my-tag:before {
+  content: '#';
+  color: rgba(255, 255, 255, 0.6);
+  padding-right: 3px;
+}
+/* line 160, ../Sass/patterns/_base.scss */
+.dataTables_wrapper .yadcf-filter {
+  width: 85px;
+  float: left;
+}
+/* line 164, ../Sass/patterns/_base.scss */
+.dataTables_wrapper .yadcf-filter-wrapper {
+  margin-top: 3px;
+  overflow: hidden;
+  border-radius: 2px;
+  min-width: 100px;
+}

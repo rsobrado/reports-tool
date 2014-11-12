@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Search - My ASP.NET MVC Application</title>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        
+        
+   <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+   
+
+
+        
+    <link href="../Content/SearchFilter3.css" rel="stylesheet" type="text/css" />
+
+        <link href="../Content/site.css" rel="stylesheet"/>
+
+        
+        
+
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title"><a href="/Home/Index">your logo here</a></p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                            <ul>
+        <li><a href="/Account/Register" id="registerLink">Register</a></li>
+        <li><a href="/Account/Login" id="loginLink">Log in</a></li>
+    </ul>
+
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="/Home/Index">Home</a></li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/Home/Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            
+            <section class="content-wrapper main-content clear-fix">
+                
+
+<h2>Search</h2>
+
+
+    
+    
+
+
+
+<form action="/fogbugzapi/Search" method="post">    <fieldset>
+        <legend>Search</legend>
+
+
+        <h3> Projects </h3>
+        <select id="dropDownProjects" name="projectName">
+            
+            <option selected>
+                --Select a project--
+            </option>
+            <option>
+                &lt;DEV&gt; BHI Live
+            </option>
+            <option>
+                BDX Sprint
+            </option>
+            <option>
+                BDX Dash
+            </option>
+            
+            
+        </select>
+
+        
+      <div class='loadingDiv'>
+             <div class="loader">
+               <center>
+                   <img src="../../Resources/ajax-loader.gif" />
+               </center>
+            </div>
+
+            <div id='filterDiv'>
+                <h3> Milestone </h3>
+                <select id="dropDownMilestone" name="milestoneName">
+            
+                    
+            
+                </select>
+        
+                <p>
+                    <input type="submit" value="Get Ticket List" />
+                </p>
+            </div>      
+      </div>  
+       
+    </fieldset>
+</form>
+<div>
+    <a href="/fogbugzapi/Index">Back to List</a>
+</div>
+
+
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; 2014 - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>
+
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+        
+    <script src="/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="/Scripts/jquery.validate.js"></script>
+<script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+
+    <script type="text/javascript" src="/Scripts/searchTicketFilter15.js"></script>   
+
+    </body>
+</html>
